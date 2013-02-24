@@ -87,6 +87,12 @@
     <string name="key_interactive_hispeed_freq">key_interactive_hispeed_freq</string>
     <string name="key_interactive_min_sample_time">key_interactive_min_sample_time</string>
     <string name="key_interactive_timer_rate">key_interactive_timer_rate</string>
+    <string name="key_intellidemand_sampling_rate">key_intellidemand_sampling_rate</string>
+    <string name="key_intellidemand_up_threshold">key_intellidemand_up_threshold</string>
+    <string name="key_intellidemand_sampling_down_factor">key_intellidemand_sampling_down_factor</string>
+    <string name="key_intellidemand_powersave_bias">key_intellidemand_powersave_bias</string>
+    <string name="key_intellidemand_io_is_busy">key_intellidemand_io_is_busy</string>
+    <string name="key_intellidemand_ignore_nice_load">key_intellidemand_ignore_nice_load</string>
             
     <string-array name="iosched_interfaces">
 	    <item>/sys/block/mtdblock4/queue/scheduler</item>

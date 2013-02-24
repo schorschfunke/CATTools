@@ -89,9 +89,11 @@
     <string name="label_liveoc_ocvalue">OC Value</string>
     <string name="label_liveoc_target_low">OC Target Low</string>
     <string name="label_liveoc_target_high">OC Target High</string>
-	<!-- lazy governor -->
+    
+    <!-- lazy governor -->
     <string name="label_lazy">Lazy</string>
     <string name="label_screenoff_maxfreq">Screen off max freq</string>
+    
     <!-- lulzactive governor -->
     <string name="label_lulzactive">Lulzactive</string>
     <string name="label_lulzactive_inc_cpu_load">Inc CPU load</string>
@@ -100,6 +102,7 @@
     <string name="label_lulzactive_screen_off_min_step">Screen off min step</string>
     <string name="label_lulzactive_down_sample_time">Down sample time</string>
     <string name="label_lulzactive_up_sample_time">Up sample time</string>
+    
     <!-- ondemand governor -->
     <string name="label_ondemand">Ondemand</string>
     <string name="label_ondemand_sampling_rate">Sampling rate</string>
@@ -116,23 +119,34 @@
     <string name="label_conservative_sampling_down_factor">Sampling down factor</string>
     <string name="label_conservative_freq_step">Freq step</string>
     <string name="label_conservative_ignore_nice_load">Ignore nice load</string>
-	<!-- smartass2 governor -->
-	<string name="label_smartass">Smartass v2</string>
-	<string name="label_smartass_awake_ideal_freq">Awake ideal freq</string>
-	<string name="label_smartass_sleep_ideal_freq">Sleep ideal freq</string>
-	<string name="label_smartass_sleep_wakeup_freq">Sleep wakeup freq</string>
-	<string name="label_smartass_min_cpu_load">Min CPU load</string>
-	<string name="label_smartass_max_cpu_load">Max CPU load</string>
-	<string name="label_smartass_ramp_down_step">Ramp down step</string>
-	<string name="label_smartass_ramp_up_step">Ramp up step</string>
-	<string name="label_smartass_down_rate_us">Down rate</string>
-	<string name="label_smartass_up_rate_us">Up rate</string>
-	<!-- interactive governor -->
-	<string name="label_interactive">Interactive</string>
-	<string name="label_interactive_go_hispeed_load">Go hispeed load</string>
-	<string name="label_interactive_hispeed_freq">Hispeed freq</string>
-	<string name="label_interactive_min_sample_time">Min sample time</string>
-	<string name="label_interactive_timer_rate">Timer rate</string>
+	
+    <!-- smartass2 governor -->
+    <string name="label_smartass">Smartass v2</string>
+    <string name="label_smartass_awake_ideal_freq">Awake ideal freq</string>
+    <string name="label_smartass_sleep_ideal_freq">Sleep ideal freq</string>
+    <string name="label_smartass_sleep_wakeup_freq">Sleep wakeup freq</string>
+    <string name="label_smartass_min_cpu_load">Min CPU load</string>
+    <string name="label_smartass_max_cpu_load">Max CPU load</string>
+    <string name="label_smartass_ramp_down_step">Ramp down step</string>
+    <string name="label_smartass_ramp_up_step">Ramp up step</string>
+    <string name="label_smartass_down_rate_us">Down rate</string>
+    <string name="label_smartass_up_rate_us">Up rate</string>
+    
+    <!-- interactive governor -->
+    <string name="label_interactive">Interactive</string>
+    <string name="label_interactive_go_hispeed_load">Go hispeed load</string>
+    <string name="label_interactive_hispeed_freq">Hispeed freq</string>
+    <string name="label_interactive_min_sample_time">Min sample time</string>
+    <string name="label_interactive_timer_rate">Timer rate</string>
+    
+    <!-- intellidemand governor -->
+    <string name="label_intellidemand">Intellidemand</string>
+    <string name="label_intellidemand_sampling_rate">Sampling rate</string>
+    <string name="label_intellidemand_up_threshold">Up threshold</string>
+    <string name="label_intellidemand_sampling_down_factor">Sampling down factor</string>
+    <string name="label_intellidemand_powersave_bias">Powersave bias</string>
+    <string name="label_intellidemand_io_is_busy">IO is busy</string>
+    <string name="label_intellidemand_ignore_nice_load">Ignore nice load</string>
 
-	<string name="msg_kernel_changed">Settings discarded because the kernel version has changed</string>
+    <string name="msg_kernel_changed">Settings discarded because the kernel version has changed</string>
 </resources>
