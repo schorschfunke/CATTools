@@ -67,6 +67,7 @@
     <string name="key_ondemand_up_threshold">key_ondemand_up_threshold</string>
     <string name="key_ondemand_sampling_down_factor">key_ondemand_sampling_down_factor</string>
     <string name="key_ondemand_powersave_bias">key_ondemand_powersave_bias</string>
+    <string name="key_ondemand_io_is_busy">key_ondemand_io_is_busy</string>
     <string name="key_conservative_sampling_rate">key_conservative_sampling_rate</string>
     <string name="key_conservative_down_threshold">key_conservative_down_threshold</string>
     <string name="key_conservative_up_threshold">key_conservative_up_threshold</string>
