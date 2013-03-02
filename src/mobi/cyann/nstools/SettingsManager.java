@@ -115,6 +115,10 @@ public class SettingsManager {
 				command.append("echo " + value + " > " + "/sys/devices/system/cpu/cpufreq/lazy/screenoff_maxfreq\n");
 			}
 		}else if(status.equals("ondemand")) { // set this parameter only if active governor = ondemand
+			value = preferences.getInt(c.getString(R.string.key_ondemand_io_is_busy), -1);
+			if(value > -1) {
+				command.append("echo " + value + " > " + "/sys/devices/system/cpu/cpufreq/ondemand/io_is_busy\n");
+			}
 			value = preferences.getInt(c.getString(R.string.key_ondemand_sampling_rate), -1);
 			if(value > -1) {
 				command.append("echo " + value + " > " + "/sys/devices/system/cpu/cpufreq/ondemand/sampling_rate\n");
@@ -123,13 +127,46 @@ public class SettingsManager {
 			if(value > -1) {
 				command.append("echo " + value + " > " + "/sys/devices/system/cpu/cpufreq/ondemand/up_threshold\n");
 			}
+			value = preferences.getInt(c.getString(R.string.key_ondemand_gradient_up_threshold), -1);
+			if(value > -1) {
+				command.append("echo " + value + " > " + "/sys/devices/system/cpu/cpufreq/ondemand/grad_up_threshold\n");
+			}
 			value = preferences.getInt(c.getString(R.string.key_ondemand_sampling_down_factor), -1);
 			if(value > -1) {
 				command.append("echo " + value + " > " + "/sys/devices/system/cpu/cpufreq/ondemand/sampling_down_factor\n");
 			}
-			value = preferences.getInt(c.getString(R.string.key_ondemand_powersave_bias), -1);
+			value = preferences.getInt(c.getString(R.string.key_ondemand_sampling_down_max_momentum), -1);
 			if(value > -1) {
-				command.append("echo " + value + " > " + "/sys/devices/system/cpu/cpufreq/ondemand/powersave_bias\n");
+				command.append("echo " + value + " > " + "/sys/devices/system/cpu/cpufreq/ondemand/sampling_down_max_momentum\n");
+			}
+			value = preferences.getInt(c.getString(R.string.key_ondemand_early_demand), -1);
+			if(value > -1) {
+				command.append("echo " + value + " > " + "/sys/devices/system/cpu/cpufreq/ondemand/early_demand\n");
+			}
+		}else if(status.equals("intellidemand")) { // set this parameter only if active governor = intellidemand
+			value = preferences.getInt(c.getString(R.string.key_intellidemand_io_is_busy), -1);
+			if(value > -1) {
+				command.append("echo " + value + " > " + "/sys/devices/system/cpu/cpufreq/intellidemand/io_is_busy\n");
+			}
+			value = preferences.getInt(c.getString(R.string.key_intellidemand_sampling_rate), -1);
+			if(value > -1) {
+				command.append("echo " + value + " > " + "/sys/devices/system/cpu/cpufreq/intellidemand/sampling_rate\n");
+			}
+			value = preferences.getInt(c.getString(R.string.key_intellidemand_up_threshold), -1);
+			if(value > -1) {
+				command.append("echo " + value + " > " + "/sys/devices/system/cpu/cpufreq/intellidemand/up_threshold\n");
+			}
+			value = preferences.getInt(c.getString(R.string.key_intellidemand_sampling_down_factor), -1);
+			if(value > -1) {
+				command.append("echo " + value + " > " + "/sys/devices/system/cpu/cpufreq/intellidemand/sampling_down_factor\n");
+			}
+			value = preferences.getInt(c.getString(R.string.key_intellidemand_powersave_bias), -1);
+			if(value > -1) {
+				command.append("echo " + value + " > " + "/sys/devices/system/cpu/cpufreq/intellidemand/powersave_bias\n");
+			}
+			value = preferences.getInt(c.getString(R.string.key_intellidemand_ignore_nice_load), -1);
+			if(value > -1) {
+				command.append("echo " + value + " > " + "/sys/devices/system/cpu/cpufreq/intellidemand/ignore_nice_load\n");
 			}
 		}else if(status.equals("conservative")) { // set this parameter only if active governor = conservative
 		    value = preferences.getInt(c.getString(R.string.key_conservative_sampling_rate), -1);

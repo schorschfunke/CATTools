@@ -78,12 +78,32 @@
         <mobi.cyann.nstools.preference.IntegerPreference
             custom:interfacePath="/sys/devices/system/cpu/cpufreq/ondemand/sampling_rate"
             android:key="@string/key_ondemand_sampling_rate"
-            custom:maxValue="100000"
+            custom:maxValue="40000"
             custom:metrics="µs"
             custom:minValue="10000"
             custom:step="1000"
             android:summary="0"
             android:title="@string/label_ondemand_sampling_rate" />
+
+        <mobi.cyann.nstools.preference.IntegerPreference
+            custom:interfacePath="/sys/devices/system/cpu/cpufreq/ondemand/sampling_down_factor"
+            android:key="@string/key_ondemand_sampling_down_factor"
+            custom:maxValue="1000"
+            custom:metrics="step"
+            custom:minValue="1"
+            custom:step="1"
+            android:summary="0"
+            android:title="@string/label_ondemand_sampling_down_factor" />
+
+        <mobi.cyann.nstools.preference.IntegerPreference
+            custom:interfacePath="/sys/devices/system/cpu/cpufreq/ondemand/sampling_down_max_momentum"
+            android:key="@string/key_ondemand_sampling_down_max_momentum"
+            custom:maxValue="1000"
+            custom:metrics="step"
+            custom:minValue="1"
+            custom:step="1"
+            android:summary="0"
+            android:title="@string/label_ondemand_sampling_down_max_momentum" />
 
         <mobi.cyann.nstools.preference.IntegerPreference
             custom:interfacePath="/sys/devices/system/cpu/cpufreq/ondemand/up_threshold"
@@ -94,25 +114,22 @@
             custom:step="1"
             android:summary="0"
             android:title="@string/label_ondemand_up_threshold" />
-
-        <mobi.cyann.nstools.preference.IntegerPreference
-            custom:interfacePath="/sys/devices/system/cpu/cpufreq/ondemand/sampling_down_factor"
-            android:key="@string/key_ondemand_sampling_down_factor"
-            custom:maxValue="100000"
-            custom:metrics="step"
-            custom:minValue="1"
+	    
+	<mobi.cyann.nstools.preference.IntegerPreference
+            custom:interfacePath="/sys/devices/system/cpu/cpufreq/ondemand/grad_up_threshold"
+            android:key="@string/key_ondemand_gradient_up_threshold"
+            custom:maxValue="100"
+            custom:metrics="%"
+            custom:minValue="11"
             custom:step="1"
             android:summary="0"
-            android:title="@string/label_ondemand_sampling_down_factor" />
+            android:title="@string/label_ondemand_gradient_up_threshold" />
 
-        <mobi.cyann.nstools.preference.IntegerPreference
-            custom:interfacePath="/sys/devices/system/cpu/cpufreq/ondemand/powersave_bias"
-            android:key="@string/key_ondemand_powersave_bias"
-            custom:maxValue="1000"
-            custom:minValue="0"
-            custom:step="10"
-            android:summary="0"
-            android:title="@string/label_ondemand_powersave_bias" />
+        <mobi.cyann.nstools.preference.StatusPreference
+            custom:interfacePath="/sys/devices/system/cpu/cpufreq/ondemand/early_demand"
+            android:key="@string/key_ondemand_early_demand"
+            android:summary="@string/status_not_available"
+            android:title="@string/label_ondemand_early_demand" />
     </mobi.cyann.nstools.preference.GovernorPreferenceGroup>
 
     <mobi.cyann.nstools.preference.GovernorPreferenceGroup

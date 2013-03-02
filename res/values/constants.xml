@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">NSTools</string>
-    <string name="app_version">fishears v1.01</string>
+    <string name="app_version">fishears v1.02</string>
     
     <string name="SETTINGS_DIR">/data/data/mobi.cyann.nstools/settings/</string>
     <string name="SCRIPT_DIR">/data/data/mobi.cyann.nstools/scripts/</string>
@@ -63,11 +63,15 @@
     <string name="key_lulzactive_screen_off_min_step">key_lulzactive_screen_off_min_step</string>
     <string name="key_lulzactive_up_sample_time">key_lulzactive_up_sample_time</string>
     <string name="key_lulzactive_down_sample_time">key_lulzactive_down_sample_time</string>
+    
     <string name="key_ondemand_sampling_rate">key_ondemand_sampling_rate</string>
-    <string name="key_ondemand_up_threshold">key_ondemand_up_threshold</string>
     <string name="key_ondemand_sampling_down_factor">key_ondemand_sampling_down_factor</string>
-    <string name="key_ondemand_powersave_bias">key_ondemand_powersave_bias</string>
+    <string name="key_ondemand_sampling_down_max_momentum">key_ondemand_sampling_down_max_momentum</string>
+    <string name="key_ondemand_up_threshold">key_ondemand_up_threshold</string>
+    <string name="key_ondemand_gradient_up_threshold">key_ondemand_gradient_up_threshold</string>
+    <string name="key_ondemand_early_demand">key_ondemand_early_demand</string>
     <string name="key_ondemand_io_is_busy">key_ondemand_io_is_busy</string>
+    
     <string name="key_conservative_sampling_rate">key_conservative_sampling_rate</string>
     <string name="key_conservative_down_threshold">key_conservative_down_threshold</string>
     <string name="key_conservative_up_threshold">key_conservative_up_threshold</string>

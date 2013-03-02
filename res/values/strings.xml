@@ -106,9 +106,11 @@
     <!-- ondemand governor -->
     <string name="label_ondemand">Ondemand</string>
     <string name="label_ondemand_sampling_rate">Sampling rate</string>
-    <string name="label_ondemand_up_threshold">Up threshold</string>
     <string name="label_ondemand_sampling_down_factor">Sampling down factor</string>
-    <string name="label_ondemand_powersave_bias">Powersave bias</string>
+    <string name="label_ondemand_sampling_down_max_momentum">Sampling down max momentum</string>
+    <string name="label_ondemand_up_threshold">Up threshold</string>
+    <string name="label_ondemand_gradient_up_threshold">Gradient up threshold</string>
+    <string name="label_ondemand_early_demand">Early demand</string>
     <string name="label_ondemand_io_is_busy">IO is busy</string>
     
     <!-- conservative governor -->
