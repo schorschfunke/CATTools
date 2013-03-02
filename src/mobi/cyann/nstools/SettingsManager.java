@@ -143,6 +143,10 @@ public class SettingsManager {
 			if(value > -1) {
 				command.append("echo " + value + " > " + "/sys/devices/system/cpu/cpufreq/ondemand/early_demand\n");
 			}
+			value = preferences.getInt(c.getString(R.string.key_ondemand_smooth_ui), -1);
+			if(value > -1) {
+				command.append("echo " + value + " > " + "/sys/devices/system/cpu/cpufreq/ondemand/smooth_ui\n");
+			}
 		}else if(status.equals("intellidemand")) { // set this parameter only if active governor = intellidemand
 			value = preferences.getInt(c.getString(R.string.key_intellidemand_io_is_busy), -1);
 			if(value > -1) {

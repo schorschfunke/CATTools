@@ -130,6 +130,12 @@
             android:key="@string/key_ondemand_early_demand"
             android:summary="@string/status_not_available"
             android:title="@string/label_ondemand_early_demand" />
+	    
+	<mobi.cyann.nstools.preference.StatusPreference
+            custom:interfacePath="/sys/devices/system/cpu/cpufreq/ondemand/smooth_ui"
+            android:key="@string/key_ondemand_smooth_ui"
+            android:summary="@string/status_not_available"
+            android:title="@string/label_ondemand_smooth_ui" />
     </mobi.cyann.nstools.preference.GovernorPreferenceGroup>
 
     <mobi.cyann.nstools.preference.GovernorPreferenceGroup

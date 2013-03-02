@@ -71,6 +71,7 @@
     <string name="key_ondemand_gradient_up_threshold">key_ondemand_gradient_up_threshold</string>
     <string name="key_ondemand_early_demand">key_ondemand_early_demand</string>
     <string name="key_ondemand_io_is_busy">key_ondemand_io_is_busy</string>
+    <string name="key_ondemand_smooth_ui">key_ondemand_smooth_ui</string>
     
     <string name="key_conservative_sampling_rate">key_conservative_sampling_rate</string>
     <string name="key_conservative_down_threshold">key_conservative_down_threshold</string>

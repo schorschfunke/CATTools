@@ -112,6 +112,7 @@
     <string name="label_ondemand_gradient_up_threshold">Gradient up threshold</string>
     <string name="label_ondemand_early_demand">Early demand</string>
     <string name="label_ondemand_io_is_busy">IO is busy</string>
+    <string name="label_ondemand_smooth_ui">Smooth UI</string>
     
     <!-- conservative governor -->
     <string name="label_conservative">Conservative</string>
