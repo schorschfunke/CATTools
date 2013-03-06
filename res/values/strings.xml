@@ -140,6 +140,7 @@
     <string name="label_interactive_hispeed_freq">Hispeed freq</string>
     <string name="label_interactive_min_sample_time">Min sample time</string>
     <string name="label_interactive_timer_rate">Timer rate</string>
+    <string name="label_interactive_target_loads">Target loads</string>
     
     <!-- intellidemand governor -->
     <string name="label_intellidemand">Intellidemand</string>
