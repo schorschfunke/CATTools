@@ -251,6 +251,10 @@ public class SettingsManager {
 			if(value > -1) {
 				command.append("echo " + value + " > " + "/sys/devices/system/cpu/cpufreq/interactive/timer_rate\n");
 			}
+			value = preferences.getInt(c.getString(R.string.key_interactive_target_loads), -1);
+			if(value > -1) {
+				command.append("echo " + value + " > " + "/sys/devices/system/cpu/cpufreq/interactive/target_loads\n");
+			}
 		}else if(status.equals("lulzactive")) { // set this parameter only if active governor = lulzactive
 			// lulzactive inc_cpu_load
 			value = preferences.getInt(c.getString(R.string.key_lulzactive_inc_cpu_load), -1);
