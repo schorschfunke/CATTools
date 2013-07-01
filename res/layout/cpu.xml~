@@ -124,6 +124,12 @@
             custom:step="1"
             android:summary="0"
             android:title="@string/label_ondemand_gradient_up_threshold" />
+
+        <mobi.cyann.nstools.preference.StatusPreference
+            custom:interfacePath="/sys/devices/system/cpu/cpufreq/ondemand/early_demand"
+            android:key="@string/key_ondemand_early_demand"
+            android:summary="@string/status_not_available"
+            android:title="@string/label_ondemand_early_demand" />
 	    
 	<mobi.cyann.nstools.preference.StatusPreference
             custom:interfacePath="/sys/devices/system/cpu/cpufreq/ondemand/smooth_ui"
