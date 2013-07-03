@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">NSTools</string>
-    <string name="app_version">fishears v1.02</string>
+    <string name="app_version">catears v1.0</string>
     
     <string name="SETTINGS_DIR">/data/data/mobi.cyann.nstools/settings/</string>
     <string name="SCRIPT_DIR">/data/data/mobi.cyann.nstools/scripts/</string>
@@ -99,6 +99,9 @@
     <string name="key_intellidemand_powersave_bias">key_intellidemand_powersave_bias</string>
     <string name="key_intellidemand_io_is_busy">key_intellidemand_io_is_busy</string>
     <string name="key_intellidemand_ignore_nice_load">key_intellidemand_ignore_nice_load</string>
+
+	<string name="key_bigmem_enable">key_bigmem_enable</string>
+
             
     <string-array name="iosched_interfaces">
 	    <item>/sys/block/mtdblock4/queue/scheduler</item>
