@@ -10,7 +10,7 @@
             android:title="@string/label_status" />
 	</mobi.cyann.nstools.preference.RemovablePreferenceCategory>
 
-    <mobi.cyann.nstools.preference.RemovablePreferenceCategory android:title="@string/bigmem" >
+    <mobi.cyann.nstools.preference.RemovablePreferenceCategory android:title="@string/label_bigmem" >
         <mobi.cyann.nstools.preference.IntegerPreference
             custom:interfacePath="/sys/kernel/bigmem/enable"
             android:key="@string/key_bigmem_enable"

@@ -19,7 +19,7 @@
     <string name="touchwake_tweak">Touchwake</string>
 	<string name="iosched_tweak">IO Scheduler</string>
 	<string name="label_iosched">Active scheduler</string>
-	<string name="bigmem">Bigmem</string>
+	<string name="label_bigmem">Bigmem status</string>
 	
     <!-- VoltageControlActivity -->
     <string name="voltage_control">Volt</string>
