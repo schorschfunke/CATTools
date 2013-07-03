@@ -14,6 +14,6 @@ LOCAL_PACKAGE_NAME := NSTools
 #LOCAL_PROGUARD_FLAG_FILES := proguard.cfg
 
 # sign apk with nstools key
-LOCAL_CERTIFICATE := nstools
+#LOCAL_CERTIFICATE := nstools
 
 include $(BUILD_PACKAGE)
