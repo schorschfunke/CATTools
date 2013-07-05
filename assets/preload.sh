@@ -76,7 +76,7 @@ case "$?" in
 	;;
 esac
 
-# bln
+# deepidle
 STAT=`cat /sys/class/misc/deepidle/enabled`
 case "$STAT" in
 	1)
@@ -87,6 +87,20 @@ case "$STAT" in
 	;;
 	*)
 	echo "key_deepidle_status=-1" >> $OUT_FILE
+	;;
+esac
+
+# dynamic fsync
+STAT=`cat /sys/kernel/dyn_fsync/Dyn_fsync_active`
+case "$STAT" in
+	1)
+	echo "key_dynamic_fsync_forced=1" >> $OUT_FILE
+	;;
+	0)
+	echo "key_dynamic_fsync_forced=0" >> $OUT_FILE
+	;;
+	*)
+	echo "key_dynamic_fsync_forced=-1" >> $OUT_FILE
 	;;
 esac
 
