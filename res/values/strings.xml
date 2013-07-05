@@ -19,8 +19,9 @@
     <string name="touchwake_tweak">Touchwake</string>
 	<string name="iosched_tweak">IO Scheduler</string>
 	<string name="label_iosched">Active scheduler</string>
-	<string name="label_bigmem">Bigmem status</string>
+	<string name="label_bigmem">Bigmem</string>
 	<string name="summary_bigmem">You must reboot to activate the change</string>
+	<string name="dynamic_fsync">Dynamic fsync</string>
 	
     <!-- VoltageControlActivity -->
     <string name="voltage_control">Volt</string>

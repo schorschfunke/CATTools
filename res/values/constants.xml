@@ -102,6 +102,7 @@
     <string name="key_intellidemand_ignore_nice_load">key_intellidemand_ignore_nice_load</string>
 
     <string name="key_bigmem_enable">key_bigmem_enable</string>
+	<string name="key_dynamic_fsync_forced">key_dynamic_fsync_forced</string>
 
             
     <string-array name="iosched_interfaces">
