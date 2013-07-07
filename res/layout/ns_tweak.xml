@@ -14,7 +14,6 @@
         <mobi.cyann.nstools.preference.IntegerPreference
             custom:interfacePath="/sys/kernel/bigmem/enable"
             android:key="@string/key_bigmem_enable"
-            android:summary="@string/summary_bigmem"
             custom:maxValue="2"
             custom:metrics=""
             custom:minValue="0"
