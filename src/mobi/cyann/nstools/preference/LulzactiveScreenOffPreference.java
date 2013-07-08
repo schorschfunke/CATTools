@@ -2,9 +2,9 @@
  * LulzactiveScreenOffPreference.java
  * Jan 14, 2012 9:36:34 AM
  */
-package mobi.cyann.nstools.preference;
+package mobi.cyann.cattools.preference;
 
-import mobi.cyann.nstools.R;
+import mobi.cyann.cattools.R;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;

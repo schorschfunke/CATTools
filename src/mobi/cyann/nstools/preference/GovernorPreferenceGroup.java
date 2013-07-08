@@ -2,10 +2,10 @@
  * GovernorPreferenceGroup.java
  * Jan 14, 2012 8:39:01 AM
  */
-package mobi.cyann.nstools.preference;
+package mobi.cyann.cattools.preference;
 
-import mobi.cyann.nstools.PreloadValues;
-import mobi.cyann.nstools.R;
+import mobi.cyann.cattools.PreloadValues;
+import mobi.cyann.cattools.R;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.TypedArray;
@@ -39,8 +39,8 @@ public class GovernorPreferenceGroup extends RemovablePreferenceCategory {
     }
     
     private void init(Context context, AttributeSet attrs) {
-    	TypedArray a = context.obtainStyledAttributes(attrs,R.styleable.mobi_cyann_nstools_preference_GovernorPreferenceGroup, 0, 0);
-		governor = a.getString(R.styleable.mobi_cyann_nstools_preference_GovernorPreferenceGroup_governor);
+    	TypedArray a = context.obtainStyledAttributes(attrs,R.styleable.mobi_cyann_cattools_preference_GovernorPreferenceGroup, 0, 0);
+		governor = a.getString(R.styleable.mobi_cyann_cattools_preference_GovernorPreferenceGroup_governor);
 		a.recycle();
 		if(blankView == null) {
 			blankView = new FrameLayout(context);

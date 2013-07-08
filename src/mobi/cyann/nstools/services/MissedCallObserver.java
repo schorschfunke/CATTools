@@ -2,9 +2,9 @@
  * MissedCallObserver.java
  * Jan 10, 2012 11:01:12 AM
  */
-package mobi.cyann.nstools.services;
+package mobi.cyann.cattools.services;
 
-import mobi.cyann.nstools.SysCommand;
+import mobi.cyann.cattools.SysCommand;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -20,7 +20,7 @@ import android.util.Log;
  *
  */
 public class MissedCallObserver extends ContentObserver {
-	private final static String LOG_TAG = "NSTools.MissedCallObserver";
+	private final static String LOG_TAG = "CATTools.MissedCallObserver";
 	private Context context;
 	private ScreenReceiver screenReceiver;
 	

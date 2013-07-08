@@ -2,7 +2,7 @@
  * RemovablePreferenceCategory.java
  * Jan 13, 2012 5:34:25 PM
  */
-package mobi.cyann.nstools.preference;
+package mobi.cyann.cattools.preference;
 
 import android.content.Context;
 import android.preference.Preference;

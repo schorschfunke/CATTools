@@ -2,10 +2,10 @@
  * IntegerPreference.java
  * Nov 26, 2011 9:27:54 AM
  */
-package mobi.cyann.nstools.preference;
+package mobi.cyann.cattools.preference;
 
-import mobi.cyann.nstools.R;
-import mobi.cyann.nstools.SeekbarDialog;
+import mobi.cyann.cattools.R;
+import mobi.cyann.cattools.SeekbarDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.res.TypedArray;
@@ -18,7 +18,7 @@ import android.widget.TextView;
  *
  */
 public class IntegerPreference extends StatusPreference implements DialogInterface.OnClickListener {
-	//private final static String LOG_TAG = "NSTools.IntegerPreference";
+	//private final static String LOG_TAG = "CATTools.IntegerPreference";
 	
 	private Context context;
 	private int minValue, maxValue, step;
@@ -27,11 +27,11 @@ public class IntegerPreference extends StatusPreference implements DialogInterfa
 	public IntegerPreference(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
 		
-		TypedArray a = context.obtainStyledAttributes(attrs,R.styleable.mobi_cyann_nstools_preference_IntegerPreference, defStyle, 0);
-		minValue = a.getInt(R.styleable.mobi_cyann_nstools_preference_IntegerPreference_minValue, 0);
-		maxValue = a.getInt(R.styleable.mobi_cyann_nstools_preference_IntegerPreference_maxValue, 100);
-		step = a.getInt(R.styleable.mobi_cyann_nstools_preference_IntegerPreference_step, 1);
-		metrics = a.getString(R.styleable.mobi_cyann_nstools_preference_IntegerPreference_metrics);
+		TypedArray a = context.obtainStyledAttributes(attrs,R.styleable.mobi_cyann_cattools_preference_IntegerPreference, defStyle, 0);
+		minValue = a.getInt(R.styleable.mobi_cyann_cattools_preference_IntegerPreference_minValue, 0);
+		maxValue = a.getInt(R.styleable.mobi_cyann_cattools_preference_IntegerPreference_maxValue, 100);
+		step = a.getInt(R.styleable.mobi_cyann_cattools_preference_IntegerPreference_step, 1);
+		metrics = a.getString(R.styleable.mobi_cyann_cattools_preference_IntegerPreference_metrics);
 		a.recycle();
 		
 		this.context = context;

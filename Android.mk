@@ -8,12 +8,12 @@ LOCAL_SRC_FILES := $(call all-java-files-under,src)
 LOCAL_STATIC_JAVA_LIBRARIES := \
     android-support-v4
 
-LOCAL_PACKAGE_NAME := NSTools
+LOCAL_PACKAGE_NAME := CATTools
 
 # disable proguard to make easy debugging
 LOCAL_PROGUARD_FLAG_FILES := proguard.cfg
 
-# sign apk with nstools key
-#LOCAL_CERTIFICATE := nstools
+# sign apk with cattools key
+#LOCAL_CERTIFICATE := cattools
 
 include $(BUILD_PACKAGE)

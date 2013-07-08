@@ -1,4 +1,4 @@
-package mobi.cyann.nstools;
+package mobi.cyann.cattools;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -15,7 +15,7 @@ import java.util.List;
 import android.util.Log;
 
 public class SysCommand {
-	private final static String LOG_TAG = "NSTools.SysCommand";
+	private final static String LOG_TAG = "CATTools.SysCommand";
 
 	private StreamGobbler out;
 	private StreamGobbler err;

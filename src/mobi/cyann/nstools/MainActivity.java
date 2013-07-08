@@ -1,4 +1,4 @@
-package mobi.cyann.nstools;
+package mobi.cyann.cattools;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -6,7 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 
-import mobi.cyann.nstools.services.ObserverService;
+import mobi.cyann.cattools.services.ObserverService;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -23,7 +23,7 @@ import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 
 public class MainActivity extends FragmentActivity {
-	private final static String LOG_TAG = "NSTools.MainActivity";
+	private final static String LOG_TAG = "CATTools.MainActivity";
 	
 	private boolean onCreate = false;
 	private TabHost tabHost;
@@ -116,7 +116,7 @@ public class MainActivity extends FragmentActivity {
 		}
 		
 		Intent i = new Intent();
-		i.setAction("mobi.cyann.nstools.RELOAD");
+		i.setAction("mobi.cyann.cattools.RELOAD");
 		sendBroadcast(i);
     }
     

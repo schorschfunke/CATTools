@@ -2,10 +2,10 @@
  * ListPreference.java
  * Nov 27, 2011 1:18:40 PM
  */
-package mobi.cyann.nstools.preference;
+package mobi.cyann.cattools.preference;
 
-import mobi.cyann.nstools.PreloadValues;
-import mobi.cyann.nstools.R;
+import mobi.cyann.cattools.PreloadValues;
+import mobi.cyann.cattools.R;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -20,7 +20,7 @@ import android.widget.TextView;
  *
  */
 public class ListPreference extends BasePreference<Object> implements DialogInterface.OnClickListener {
-	private final static String LOG_TAG = "NSTools.ListPreference";
+	private final static String LOG_TAG = "CATTools.ListPreference";
 	private Object value = null;
 	private Object listValues[];
 	private String listLabels[];
@@ -29,8 +29,8 @@ public class ListPreference extends BasePreference<Object> implements DialogInte
 	public ListPreference(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
 		
-		TypedArray a = context.obtainStyledAttributes(attrs,R.styleable.mobi_cyann_nstools_preference_ListPreference, defStyle, 0);
-		valueType = a.getInt(R.styleable.mobi_cyann_nstools_preference_ListPreference_valueType, 0);
+		TypedArray a = context.obtainStyledAttributes(attrs,R.styleable.mobi_cyann_cattools_preference_ListPreference, defStyle, 0);
+		valueType = a.getInt(R.styleable.mobi_cyann_cattools_preference_ListPreference_valueType, 0);
 		a.recycle();
 	}
 

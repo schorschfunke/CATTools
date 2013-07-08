@@ -2,13 +2,13 @@
  * IoSchedPreference.java
  * Nov 27, 2011 10:03:52 AM
  */
-package mobi.cyann.nstools.preference;
+package mobi.cyann.cattools.preference;
 
 import java.util.Arrays;
 
-import mobi.cyann.nstools.PreloadValues;
-import mobi.cyann.nstools.R;
-import mobi.cyann.nstools.SysCommand;
+import mobi.cyann.cattools.PreloadValues;
+import mobi.cyann.cattools.R;
+import mobi.cyann.cattools.SysCommand;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -23,7 +23,7 @@ import android.widget.TextView;
  *
  */
 public class IoSchedPreference extends BasePreference<String> implements DialogInterface.OnClickListener {
-	private final static String LOG_TAG = "NSTools.IOSchedPreference";
+	private final static String LOG_TAG = "CATTools.IOSchedPreference";
 	private String value;
 	private String schedValues[];
 	private CharSequence writeToInterfaces[];
@@ -31,8 +31,8 @@ public class IoSchedPreference extends BasePreference<String> implements DialogI
 	public IoSchedPreference(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
 		
-		TypedArray a = context.obtainStyledAttributes(attrs,R.styleable.mobi_cyann_nstools_preference_IoSchedPreference, defStyle, 0);
-		writeToInterfaces = a.getTextArray(R.styleable.mobi_cyann_nstools_preference_IoSchedPreference_writeToInterface);
+		TypedArray a = context.obtainStyledAttributes(attrs,R.styleable.mobi_cyann_cattools_preference_IoSchedPreference, defStyle, 0);
+		writeToInterfaces = a.getTextArray(R.styleable.mobi_cyann_cattools_preference_IoSchedPreference_writeToInterface);
 		a.recycle();
 	}
 

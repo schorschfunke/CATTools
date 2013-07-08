@@ -2,14 +2,14 @@
  * BasePreferenceFragment.java
  * Nov 25, 2011 10:05:19 PM
  */
-package mobi.cyann.nstools;
+package mobi.cyann.cattools;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import mobi.cyann.nstools.PreferenceListFragment.OnPreferenceAttachedListener;
-import mobi.cyann.nstools.preference.BasePreference;
-import mobi.cyann.nstools.preference.RemovablePreferenceCategory;
+import mobi.cyann.cattools.PreferenceListFragment.OnPreferenceAttachedListener;
+import mobi.cyann.cattools.preference.BasePreference;
+import mobi.cyann.cattools.preference.RemovablePreferenceCategory;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -37,7 +37,7 @@ public class BasePreferenceFragment extends PreferenceListFragment implements On
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		reloadListener = new ReloadListener();
-		getActivity().registerReceiver(reloadListener, new IntentFilter("mobi.cyann.nstools.RELOAD"));
+		getActivity().registerReceiver(reloadListener, new IntentFilter("mobi.cyann.cattools.RELOAD"));
 	}
 	
 	@Override

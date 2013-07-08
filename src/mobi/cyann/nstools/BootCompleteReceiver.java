@@ -1,6 +1,6 @@
-package mobi.cyann.nstools;
+package mobi.cyann.cattools;
 
-import mobi.cyann.nstools.services.ObserverService;
+import mobi.cyann.cattools.services.ObserverService;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -11,7 +11,7 @@ import android.util.Log;
  *
  */
 public class BootCompleteReceiver extends BroadcastReceiver {
-	private static final String LOG_TAG = "NSTools.BootCompleteReceiver";
+	private static final String LOG_TAG = "CATTools.BootCompleteReceiver";
 	@Override
 	public void onReceive(Context context, Intent intent) {
 		Log.d(LOG_TAG, "starting service");

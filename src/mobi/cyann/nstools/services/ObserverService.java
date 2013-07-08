@@ -2,9 +2,9 @@
  * ObserverService.java
  * Jan 19, 2012 5:14:04 PM
  */
-package mobi.cyann.nstools.services;
+package mobi.cyann.cattools.services;
 
-import mobi.cyann.nstools.R;
+import mobi.cyann.cattools.R;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
@@ -18,7 +18,7 @@ import android.util.Log;
  *
  */
 public class ObserverService extends Service {
-	private final static String LOG_TAG = "NSTools.ObserverService";
+	private final static String LOG_TAG = "CATTools.ObserverService";
 	private MissedCallObserver missedCallObserver;
 	private BlnObserver blnObserver;
 	
@@ -65,7 +65,7 @@ public class ObserverService extends Service {
 
 	public static void startService(Context context, boolean forced) {
 		SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
-		boolean startService = preferences.getBoolean(context.getString(R.string.key_nstools_service), false);
+		boolean startService = preferences.getBoolean(context.getString(R.string.key_cattools_service), false);
 		if(startService || forced) {
 			context.startService(new Intent(context, ObserverService.class));
 		}

@@ -2,9 +2,9 @@
  * VoltagePreference.java
  * Nov 27, 2011 8:07:22 PM
  */
-package mobi.cyann.nstools.preference;
+package mobi.cyann.cattools.preference;
 
-import mobi.cyann.nstools.PreloadValues;
+import mobi.cyann.cattools.PreloadValues;
 import android.content.Context;
 import android.util.AttributeSet;
 

@@ -2,13 +2,13 @@
  * VoltageControlFragment.java
  * Nov 6, 2011 7:27:58 PM
  */
-package mobi.cyann.nstools;
+package mobi.cyann.cattools;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import mobi.cyann.nstools.preference.IntegerPreference;
-import mobi.cyann.nstools.preference.VoltagePreference;
+import mobi.cyann.cattools.preference.IntegerPreference;
+import mobi.cyann.cattools.preference.VoltagePreference;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
@@ -28,7 +28,7 @@ import android.widget.CheckBox;
  *
  */
 public class VoltageControlFragment extends BasePreferenceFragment implements OnPreferenceChangeListener {
-	private final static String LOG_TAG = "NSTools.VoltageControlActivity";
+	private final static String LOG_TAG = "CATTools.VoltageControlActivity";
 	
 	private IntegerPreference maxArmVolt;
 	private IntegerPreference maxIntVolt;

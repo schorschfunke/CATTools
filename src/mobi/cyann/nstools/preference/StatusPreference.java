@@ -2,10 +2,10 @@
  * StatusPreference.java
  * Nov 24, 2011 9:00:58 PM
  */
-package mobi.cyann.nstools.preference;
+package mobi.cyann.cattools.preference;
 
-import mobi.cyann.nstools.PreloadValues;
-import mobi.cyann.nstools.R;
+import mobi.cyann.cattools.PreloadValues;
+import mobi.cyann.cattools.R;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
@@ -18,7 +18,7 @@ import android.widget.TextView;
  *
  */
 public class StatusPreference extends BasePreference<Integer> {
-	private final static String LOG_TAG = "NSTools.StatusPreference";
+	private final static String LOG_TAG = "CATTools.StatusPreference";
 	protected int value = -1;
 	
 	public StatusPreference(Context context, AttributeSet attrs, int defStyle) {

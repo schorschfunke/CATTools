@@ -2,7 +2,7 @@
  * PreloadValues.java
  * Nov 26, 2011 2:23:21 PM
  */
-package mobi.cyann.nstools;
+package mobi.cyann.cattools;
 
 import java.io.FileInputStream;
 import java.util.Properties;
@@ -14,7 +14,7 @@ import android.util.Log;
  *
  */
 public class PreloadValues {
-	private final static String LOG_TAG = "NSTools.PreloadValues";
+	private final static String LOG_TAG = "CATTools.PreloadValues";
 	
 	private final static PreloadValues singleton;
 	
@@ -35,7 +35,7 @@ public class PreloadValues {
 	public void reload() {
 		prop = new Properties();
 		try {
-			FileInputStream fis = new FileInputStream("/data/data/mobi.cyann.nstools/preload.prop");
+			FileInputStream fis = new FileInputStream("/data/data/mobi.cyann.cattools/preload.prop");
 			prop.load(fis);
 			fis.close();
 		}catch(Exception ex) {

@@ -2,9 +2,9 @@
  * WakeLock.java
  * Jan 20, 2012 9:36:47 AM
  */
-package mobi.cyann.nstools.services;
+package mobi.cyann.cattools.services;
 
-import mobi.cyann.nstools.R;
+import mobi.cyann.cattools.R;
 import android.content.Context;
 import android.os.PowerManager;
 

@@ -2,11 +2,11 @@
  * FileSelectPreference.java
  * Jan 1, 2012 12:33:20 PM
  */
-package mobi.cyann.nstools.preference;
+package mobi.cyann.cattools.preference;
 
 import java.io.File;
 
-import mobi.cyann.nstools.R;
+import mobi.cyann.cattools.R;
 import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -23,8 +23,8 @@ public class FileSelectPreference extends ListPreference {
 	public FileSelectPreference(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		
-		TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.mobi_cyann_nstools_preference_FileSelectPreference);
-		path = a.getString(R.styleable.mobi_cyann_nstools_preference_FileSelectPreference_path);
+		TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.mobi_cyann_cattools_preference_FileSelectPreference);
+		path = a.getString(R.styleable.mobi_cyann_cattools_preference_FileSelectPreference_path);
 		a.recycle();
 	}
 

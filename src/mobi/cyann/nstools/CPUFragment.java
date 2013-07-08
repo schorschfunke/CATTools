@@ -2,15 +2,15 @@
  * CPUFragment.java
  * Nov 12, 2011 10:49:10 AM
  */
-package mobi.cyann.nstools;
+package mobi.cyann.cattools;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import mobi.cyann.nstools.preference.BasePreference.OnPreferenceChangedListener;
-import mobi.cyann.nstools.preference.IntegerPreference;
-import mobi.cyann.nstools.preference.ListPreference;
-import mobi.cyann.nstools.preference.LulzactiveScreenOffPreference;
+import mobi.cyann.cattools.preference.BasePreference.OnPreferenceChangedListener;
+import mobi.cyann.cattools.preference.IntegerPreference;
+import mobi.cyann.cattools.preference.ListPreference;
+import mobi.cyann.cattools.preference.LulzactiveScreenOffPreference;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
@@ -28,7 +28,7 @@ import android.widget.TextView;
  *
  */
 public class CPUFragment extends BasePreferenceFragment implements OnPreferenceChangedListener, OnPreferenceClickListener {
-	private final static String LOG_TAG = "NSTools.CPUActivity";
+	private final static String LOG_TAG = "CATTools.CPUActivity";
 	
 	private ListPreference governor;
 	private ListPreference minFreq;

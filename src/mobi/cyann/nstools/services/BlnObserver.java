@@ -2,10 +2,10 @@
  * BlnObserver.java
  * Jan 20, 2012 9:42:24 AM
  */
-package mobi.cyann.nstools.services;
+package mobi.cyann.cattools.services;
 
-import mobi.cyann.nstools.R;
-import mobi.cyann.nstools.SysCommand;
+import mobi.cyann.cattools.R;
+import mobi.cyann.cattools.SysCommand;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -22,7 +22,7 @@ import android.util.Log;
  *
  */
 public class BlnObserver extends FileObserver {
-	private final static String LOG_TAG = "NSTools.BlnObserver";
+	private final static String LOG_TAG = "CATTools.BlnObserver";
 	
 	private AlarmReceiver alarmReceiver;
 	private Context context;
@@ -33,7 +33,7 @@ public class BlnObserver extends FileObserver {
 		
 		alarmReceiver = new AlarmReceiver();
 		// register alarm receiver
-		context.registerReceiver(alarmReceiver, new IntentFilter("mobi.cyann.nstools.SHUTDOWN_BLN"));
+		context.registerReceiver(alarmReceiver, new IntentFilter("mobi.cyann.cattools.SHUTDOWN_BLN"));
 	}
 	
 	private int getBlnTimeout() {
@@ -57,7 +57,7 @@ public class BlnObserver extends FileObserver {
 					AlarmManager alarmManager = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
 					
 					// set alarm to turn off BLN
-					PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 1, new Intent("mobi.cyann.nstools.SHUTDOWN_BLN"), PendingIntent.FLAG_CANCEL_CURRENT);
+					PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 1, new Intent("mobi.cyann.cattools.SHUTDOWN_BLN"), PendingIntent.FLAG_CANCEL_CURRENT);
 					alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + blnTimeout, pendingIntent);
 				}
 			}

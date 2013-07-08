@@ -2,7 +2,7 @@
  * SettingsManager.java
  * Nov 27, 2011 11:19:28 AM
  */
-package mobi.cyann.nstools;
+package mobi.cyann.cattools;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -20,7 +20,7 @@ import android.util.Log;
  *
  */
 public class SettingsManager {
-	private final static String LOG_TAG = "NSTools.SettingsManager";
+	private final static String LOG_TAG = "CATTools.SettingsManager";
 	
 	public final static int SUCCESS = 0;
 	public final static int ERR_SET_ON_BOOT_FALSE = -1;

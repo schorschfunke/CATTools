@@ -2,10 +2,10 @@
  * SettingFragment.java
  * Nov 5, 2011 3:12:07 PM
  */
-package mobi.cyann.nstools;
+package mobi.cyann.cattools;
 
-import mobi.cyann.nstools.PreferenceListFragment.OnPreferenceAttachedListener;
-import mobi.cyann.nstools.services.ObserverService;
+import mobi.cyann.cattools.PreferenceListFragment.OnPreferenceAttachedListener;
+import mobi.cyann.cattools.services.ObserverService;
 import android.content.Intent;
 import android.net.Uri;
 import android.preference.EditTextPreference;
@@ -27,7 +27,7 @@ public class SettingFragment extends PreferenceListFragment implements OnPrefere
 	
 	@Override
 	public void onPreferenceAttached(PreferenceScreen rootPreference, int xmlId) {
-		findPreference(getString(R.string.key_nstools_service)).setOnPreferenceChangeListener(this);
+		findPreference(getString(R.string.key_cattools_service)).setOnPreferenceChangeListener(this);
 		findPreference(getString(R.string.key_load_settings)).setOnPreferenceChangeListener(this);
 		findPreference(getString(R.string.key_save_settings)).setOnPreferenceClickListener(this);
 		findPreference(getString(R.string.key_save_settings)).setOnPreferenceChangeListener(this);
@@ -43,7 +43,7 @@ public class SettingFragment extends PreferenceListFragment implements OnPrefere
 		if(preference.getKey().equals(getString(R.string.key_about))) {
 			Intent browse = new Intent();
 			browse.setAction(Intent.ACTION_VIEW);
-			browse.setData(Uri.parse(getString(R.string.nstools_thread_url)));
+			browse.setData(Uri.parse(getString(R.string.cattools_thread_url)));
 			startActivity(browse);
 		}else if(preference.getKey().equals(getString(R.string.key_save_settings))) {
 			((EditTextPreference)preference).getEditText().setText("");
@@ -73,7 +73,7 @@ public class SettingFragment extends PreferenceListFragment implements OnPrefere
 				SettingsManager.deleteSettings(getActivity(), newValue.toString());
 			}
 			return true;
-		}else if(preference.getKey().equals(getString(R.string.key_nstools_service))) {
+		}else if(preference.getKey().equals(getString(R.string.key_cattools_service))) {
 			if(newValue != null) {
 				if((Boolean)newValue) {
 					ObserverService.startService(getActivity(), true);

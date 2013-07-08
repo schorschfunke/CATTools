@@ -2,10 +2,10 @@
  * IntegerPreference.java
  * Jan 21, 2012 10:47:26 PM
  */
-package mobi.cyann.nstools.preference.normal;
+package mobi.cyann.cattools.preference.normal;
 
-import mobi.cyann.nstools.R;
-import mobi.cyann.nstools.SeekbarDialog;
+import mobi.cyann.cattools.R;
+import mobi.cyann.cattools.SeekbarDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.res.TypedArray;
@@ -28,11 +28,11 @@ public class IntegerPreference extends Preference implements DialogInterface.OnC
 	public IntegerPreference(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
 		
-		TypedArray a = context.obtainStyledAttributes(attrs,R.styleable.mobi_cyann_nstools_preference_IntegerPreference, defStyle, 0);
-		minValue = a.getInt(R.styleable.mobi_cyann_nstools_preference_IntegerPreference_minValue, 0);
-		maxValue = a.getInt(R.styleable.mobi_cyann_nstools_preference_IntegerPreference_maxValue, 100);
-		step = a.getInt(R.styleable.mobi_cyann_nstools_preference_IntegerPreference_step, 1);
-		metrics = a.getString(R.styleable.mobi_cyann_nstools_preference_IntegerPreference_metrics);
+		TypedArray a = context.obtainStyledAttributes(attrs,R.styleable.mobi_cyann_cattools_preference_IntegerPreference, defStyle, 0);
+		minValue = a.getInt(R.styleable.mobi_cyann_cattools_preference_IntegerPreference_minValue, 0);
+		maxValue = a.getInt(R.styleable.mobi_cyann_cattools_preference_IntegerPreference_maxValue, 100);
+		step = a.getInt(R.styleable.mobi_cyann_cattools_preference_IntegerPreference_step, 1);
+		metrics = a.getString(R.styleable.mobi_cyann_cattools_preference_IntegerPreference_metrics);
 		a.recycle();
 		
 		this.context = context;

@@ -2,7 +2,7 @@
  * OnBootCompleteService.java
  * 9:39:01 PM
  */
-package mobi.cyann.nstools;
+package mobi.cyann.cattools;
 
 import android.app.IntentService;
 import android.app.Notification;
@@ -17,9 +17,9 @@ import android.util.Log;
  *
  */
 public class OnBootCompleteService extends IntentService {
-	private final static String LOG_TAG = "NSTools.OnBootCompleteService";
+	private final static String LOG_TAG = "CATTools.OnBootCompleteService";
 	public OnBootCompleteService() {
-		super("NSToolsService");
+		super("CATToolsService");
 	}
 	
 	private void showNotification() {

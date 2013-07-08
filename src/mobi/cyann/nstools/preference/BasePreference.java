@@ -2,10 +2,10 @@
  * BasePreference.java
  * Nov 25, 2011 9:59:05 PM
  */
-package mobi.cyann.nstools.preference;
+package mobi.cyann.cattools.preference;
 
-import mobi.cyann.nstools.R;
-import mobi.cyann.nstools.SysCommand;
+import mobi.cyann.cattools.R;
+import mobi.cyann.cattools.SysCommand;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.preference.Preference;
@@ -20,7 +20,7 @@ import android.widget.FrameLayout;
  *
  */
 public abstract class BasePreference<T> extends Preference {
-	private final static String LOG_TAG = "NSTools.BasePreference";
+	private final static String LOG_TAG = "CATTools.BasePreference";
 	
 	private final String interfacePath;
 	private boolean reloadOnResume;
@@ -49,10 +49,10 @@ public abstract class BasePreference<T> extends Preference {
 		
 		setDefaultValue(-1);
 		
-		TypedArray a = context.obtainStyledAttributes(attrs,R.styleable.mobi_cyann_nstools_preference_BasePreference, defStyle, 0);
-		reloadOnResume = a.getBoolean(R.styleable.mobi_cyann_nstools_preference_BasePreference_reloadOnResume, false);
-		interfacePath = a.getString(R.styleable.mobi_cyann_nstools_preference_BasePreference_interfacePath);
-		dependencyType = a.getInt(R.styleable.mobi_cyann_nstools_preference_BasePreference_dependencyType, 0);
+		TypedArray a = context.obtainStyledAttributes(attrs,R.styleable.mobi_cyann_cattools_preference_BasePreference, defStyle, 0);
+		reloadOnResume = a.getBoolean(R.styleable.mobi_cyann_cattools_preference_BasePreference_reloadOnResume, false);
+		interfacePath = a.getString(R.styleable.mobi_cyann_cattools_preference_BasePreference_interfacePath);
+		dependencyType = a.getInt(R.styleable.mobi_cyann_cattools_preference_BasePreference_dependencyType, 0);
 		a.recycle();
 		
 		// init blankView for hiding this preference if not available

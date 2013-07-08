@@ -2,7 +2,7 @@
  * SeekbarDialog.java
  * Nov 22, 2011 11:58:02 AM
  */
-package mobi.cyann.nstools;
+package mobi.cyann.cattools;
 
 import android.app.AlertDialog;
 import android.content.Context;
